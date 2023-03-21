@@ -1,0 +1,51 @@
+$obrubTablice: 1px solid black;
+$obrudReda: 3px solid black;
+
+.tablica{
+    border: $obrubTablice;
+    width: 85%;
+    align-content: center;
+    margin: auto;
+  }
+  
+  tr{
+    border: $obrudReda;
+  }
+  
+  th{
+    border: $obrudReda;
+    text-align: center;
+  }
+  
+  td{
+    border: $obrudReda;
+    text-align: center;
+  }
+
+  .MojaSlika{
+    margin-top: 20px;
+    margin: 5px;
+      /*border-width: 5px;
+      border-style: dotted;
+      border-color: blue;*/
+      border: {
+        width: 5px;
+        style: dotted;
+        color: blue;
+      }
+      width: 40%;
+      height: 400px;
+  }
+  .ERAModel{
+      margin: {
+        top: 20px;
+        left: 140px;
+        bottom: 13px;
+      }
+      width: 40%;
+      height: 400px;
+  }
+  
+  #film{
+    font-size: large;
+  }

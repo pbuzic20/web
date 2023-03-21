@@ -1,0 +1,57 @@
+
+
+$narancasta: orange;
+$crna: black;
+$bijela: white;
+
+footer{
+  align-items: center;
+  text-align: center;
+}
+
+
+.topnav {
+    background-color: $narancasta;
+    overflow: hidden;
+  }
+
+  .topnav {
+    .odjava{
+    float: right;
+    }
+  }
+
+  .topnav {
+    .prijava{
+    float: right;
+    }
+  }
+
+  .topnav {
+    .registracija{
+    float: right;
+    }
+  }
+
+  
+  
+  .topnav {
+    a {
+    float: left;
+    color: $bijela;
+    padding: 14px 16px;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    font-size: 17px;
+    }
+  }
+  
+  .topnav {
+    a:hover {
+    background-color: $crna;
+    color: $bijela;
+    }
+  }
+  

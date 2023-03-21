@@ -1,0 +1,15 @@
+<div class="topnav">
+  <a routerLink="/pocetna"(click)="putanja='pocetna'">Pocetna</a>
+  <a routerLink="/dokumentacija" (click)="putanja='dokumentacija'">Dokumentacija</a>
+  <a routerLink="/profil" (click)="putanja='profil'">Profil</a>
+  <a routerLink="/filmoviPregled" (click)="putanja='filmoviPregled'">Pregled filmova</a>
+  <a routerLink="/filmoviPretrazivanje" (click)="putanja='filmoviPretrazivanje'">Pretraživanje filmova</a>
+  <a routerLink="/zanrovi" (click)="putanja='zanrovi'">Žanrovi</a>
+  <a routerLink="/login" class="prijava" (click)="putanja='login'">Prijava</a>
+  <a  routerLink="/registracija" class="registracija" (click)="putanja='registracija'">Registracija</a>
+  <a  style="cursor: pointer;" class="odjava" (click)="odjaviKorisnika()">Odjava</a>
+</div>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>Patrik Bužić &copy; 2022</footer>

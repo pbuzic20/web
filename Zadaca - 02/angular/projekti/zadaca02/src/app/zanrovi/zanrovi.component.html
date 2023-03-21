@@ -1,0 +1,8 @@
+<h2>Popis svih žanrova</h2>
+<ul>
+    <li *ngFor="let zanr of zanrovi">
+        {{zanr.naziv}}
+        <input type="text" #inputElement>
+        <button (click)="azuriraj(zanr, inputElement.value)">Ažuriraj</button>
+    </li>
+</ul>

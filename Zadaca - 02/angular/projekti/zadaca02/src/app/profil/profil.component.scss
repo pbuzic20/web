@@ -1,0 +1,49 @@
+.forma {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	width: 400px;
+	margin-top: 40px;
+	border-style: solid;
+	background-color: lightgoldenrodyellow;
+	border-radius: 1.3em;
+}
+.profil {
+	input {
+		margin: 8px;
+		width: 90%;
+		height: 30px;
+		border-color: orange;
+		border-radius: 0.6em;
+		&:focus {
+			background-color: black;
+			color: white;
+		}
+	}
+	.gumbAzuriranja {
+		width: 200px;
+		height: 30px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		border-radius: 0.3em;
+		background-color: orange;
+		color: white;
+		&:hover {
+			background-color: black;
+			cursor: pointer;
+			border-style: solid;
+		}
+	}
+	p {
+		margin-bottom: 5px;
+	}
+	a {
+		&:hover {
+			color: red;
+		}
+	}
+}
+h1 {
+	color: orange;
+}

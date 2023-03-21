@@ -1,0 +1,19 @@
+{
+  "name": "servis",
+  "version": "1.0.0",
+  "description": "Servis",
+  "main": "baza.js",
+  "scripts": {
+    "start": "NODE_PATH=/usr/lib/node_modules/ node --experimental-fetch restServer.js ../konfiguracija.csv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "servis"
+  ],
+  "author": "Patrik Bužić",
+  "license": "GPL-2.0-only",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "sqlite3": "^5.1.4"
+  }
+}

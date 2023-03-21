@@ -1,0 +1,12 @@
+<div class="forma">
+    <h1>Prijava</h1>
+        <form [formGroup] = "prijava" (ngSubmit) = "prijaviKorisnika()" class="obrazac">
+            <input formControlName="korime" type="text" required placeholder="Korisničko ime"/><br>
+            <span id="podaciKorime">admin: administrator, korisnik: obican</span>
+            <input formControlName="lozinka" type="password" required placeholder="Lozinka"/><br>
+            <span id="podaciLozinka">admin: rwa, korisnik: rwa</span>
+            <re-captcha (resolved)="onCaptchaResolved($event)" siteKey="6Lc3AN0jAAAAAIzPMN4uZlsqrkMYEhUTpja_ZiG4
+            "></re-captcha><br>
+            <input type="submit" value="Prijavi se"  class="gumbPrijave"/>
+        </form>
+</div>

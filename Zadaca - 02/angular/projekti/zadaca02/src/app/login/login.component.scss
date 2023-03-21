@@ -1,0 +1,74 @@
+$narancasta: orange;
+$bijela: white;
+$crna: black;
+$crvena: red;
+
+.forma{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    margin-top: 40px;
+    background-color: lightgoldenrodyellow;
+    border: {
+      style: solid;
+      radius: 1.3em;
+    }
+  }
+  
+  .obrazac {
+    input {
+    margin: 8px;
+    width: 90%;
+    height: 30px;
+    border: {
+      color: $narancasta;
+      radius: 0.6em;
+    }
+  }
+  }
+  
+  .obrazac {
+    input:focus {
+    background-color: $crna;
+    color: $bijela;
+    }
+  }
+  
+  .obrazac {
+    .gumbPrijave {
+    width: 200px;
+    height: 30px;
+    border-radius: 0.3em;
+    background-color: $narancasta;
+    color: $bijela;
+    margin: {
+      top: 10px;
+      bottom: 5px;
+    }
+  }
+  }
+  
+  .obrazac {
+    .gumbPrijave:hover {
+    background-color: $crna;
+    cursor: pointer;
+    }
+  }
+  
+  .obrazac {
+    p {
+    margin-bottom: 5px;
+    }
+  }
+  
+  .obrazac {
+    a:hover {
+    color: $crvena;
+  }
+  }
+
+  h1{
+    color: $narancasta;
+  }

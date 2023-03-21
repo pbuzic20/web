@@ -1,0 +1,21 @@
+<div class="forma">
+    <h1>Profil</h1>
+    <p id="sadrzaj"></p>
+    <form [formGroup] = "profil" autocomplete="off" (ngSubmit) = "azurirajKorisnika()" class="profil" id="profil">
+        <input type="text" formControlName="ime" [(ngModel)]="korisnik.ime" id="ime" placeholder="ime" required/>
+        <br>
+        <input type="text" formControlName="prezime" [(ngModel)]="korisnik.prezime" id="prezime" autocomplete="off" placeholder="prezime" required/>
+        <br>
+        <input type="password" formControlName="lozinka" [(ngModel)]="korisnik.lozinka" autocomplete="off"  id="lozinka" placeholder="lozinka" required/>
+        <br>
+        <input type="email" formControlName="email" [(ngModel)]="korisnik.email" id="email" placeholder="Email" required readonly/>
+        <br>
+        <input type="text" formControlName="korime" [(ngModel)]="korisnik.korime" id="korime" placeholder="Korisničko ime" required readonly/>
+        <br>
+        <input type="text" formControlName="adresa" [(ngModel)]="korisnik.adresa" id="adresa" placeholder="adresa" required/>
+        <br>
+        <re-captcha  (resolved)="onCaptchaResolved($event)" siteKey="6Lc3AN0jAAAAAIzPMN4uZlsqrkMYEhUTpja_ZiG4
+        "></re-captcha><br>
+        <input type ="submit" [disabled] = "!profil.valid" class="gumbAzuriranja" value="Ažuriraj podatke"/>
+    </form>
+</div>

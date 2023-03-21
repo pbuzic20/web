@@ -1,0 +1,25 @@
+<h1>Popis filmova</h1>
+<table class = "popisFilmova">
+    <tr>
+      <th>Naziv</th>
+      <th>Godina izlaska</th>
+      <th>Trajanje</th>
+      <th>Opis</th>
+      <th>Budget</th>
+      <th>Jezik</th>
+      <th>Prihod</th>
+      <th>Datum</th>
+      <th>Poster</th>
+    </tr>
+    <tr *ngFor="let film of filmovi">
+        <td>{{film.naziv}}</td>
+        <td>{{film.godina_izlaska}}</td>
+        <td>{{film.trajanje}}</td>
+        <td>{{film.opis}}</td>
+        <td>{{film.budget}}</td>
+        <td>{{film.jezik}}</td>
+        <td>{{film.prihod}}</td>
+        <td>{{film.datum}}</td>
+        <td>{{film.poster}}</td>
+    </tr>
+</table>

@@ -1,0 +1,26 @@
+<h1>Popis filmova</h1>
+<input type="text" [(ngModel)]="filter" (keyup)="filtriraj()">
+<table class = "popisFilmova">
+    <tr>
+      <th>Original title</th>
+      <th>Overview</th>
+      <th>Original language</th>
+      <th>Popularity</th>
+      <th>Release date</th>
+      <th>Title</th>
+      <th>Vote average</th>
+      <th>Vote count</th>
+      <th>Poster path</th>
+    </tr>
+    <tr *ngFor="let film of filmovi">
+        <td>{{film.original_title}}</td>
+        <td>{{film.overview}}</td>
+        <td>{{film.original_language}}</td>
+        <td>{{film.popularity}}</td>
+        <td>{{film.release_date}}</td>
+        <td>{{film.title}}</td>
+        <td>{{film.vote_average}}</td>
+        <td>{{film.vote_count}}</td>
+        <td>{{film.poster_path}}</td>
+    </tr>
+</table>

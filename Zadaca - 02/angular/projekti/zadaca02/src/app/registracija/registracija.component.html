@@ -1,0 +1,25 @@
+<div class="forma">
+    <h1>Registracija</h1>
+    <form [formGroup] = "registracija" (ngSubmit) = "registrirajKorisnika()" class="obrazac" id="obrazac">
+        <span id="greskaIme"></span><br>
+        <input type="text"  formControlName="ime" id="ime" placeholder="Ime" required/><br>
+        <span id="greskaPrezime"></span><br>
+        <input type="text" formControlName="prezime" id="prezime" placeholder="Prezime" required/>
+        <br>
+        <span id="greskaLozinka"></span><br>
+        <input type="password" formControlName="lozinka" id="lozinka" placeholder="Lozinka" required/>
+        <br>
+        <span id="greskaEmail"></span><br>
+        <input type="email" formControlName="email" id="email" placeholder="Email" required/>
+        <br>
+        <span id="greskaKorime"></span><br>
+        <input type="text" formControlName="korime" id="korime" placeholder="Korisničko ime" required/>
+        <br>
+        <span id="greskaAdresa"></span><br>
+        <input type="text" formControlName="adresa" id="adresa" placeholder="Adresa" required/>
+        <br>
+        <re-captcha  (resolved)="onCaptchaResolved($event)" siteKey="6Lc3AN0jAAAAAIzPMN4uZlsqrkMYEhUTpja_ZiG4
+            "></re-captcha><br>
+        <input type ="submit" class="gumbRegistracije" value="Registriraj se"/>
+    </form>
+</div>

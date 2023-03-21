@@ -1,0 +1,10 @@
+<h2>Početna</h2>
+<ul>
+    <li *ngFor="let zanr of zanrovi">{{ zanr.naziv }}
+      <ul *ngIf="filmovi">
+        <li *ngFor="let film of filmovi[zanr.id]">
+          {{film.naziv}}
+        </li>
+      </ul>
+    </li>
+  </ul>
